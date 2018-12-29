@@ -7,40 +7,34 @@ print('''To set the calculator function, \nType either of the following function
 #create the functions for each 
 
 def add(x,y):
-	ans = x + y
-	print(ans)
+	return x + y
 	
 def sub(x,y):
-	ans = x - y
-	print(ans)
+	return x - y
 
 def mul(x,y):
-	ans = x * y
-	print(ans)
+	return x * y
 	
-	
-#this could be written in a different way using the return function, as per the div function
-
 def div(x,y):
 	return x / y
 	
-a = input("Enter the required function: ")
+user = input("Enter the required function: ")
 x = int(input("Enter the first number: "))
 y = int(input("Enter the second number: "))	
 
-if a == "add":
-	sum = add(x,y)
+if user == "add":
+	print(add(x,y))
 	
 else: 
-	if a == "sub":
-		sum = sub(x,y)
+	if user == "sub":
+		print(sub(x,y))
 
 	else:
-		if a == "mul":
-		sum = mul(x,y)
+		if user == "mul":
+		print(mul(x,y))
 		
 #another way to write this, for the last function, could be as follows.
 
 		else:
-			if a == "div":
+			if user == "div":
 				print(div(x,y))
